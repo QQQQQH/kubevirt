@@ -193,6 +193,7 @@ func Execute() {
 	app.readyChan = make(chan bool, 1)
 
 	log.InitializeLogging("virt-controller")
+	log.Log.Info("SQC: virt-controller")
 
 	app.clientSet, err = kubecli.GetKubevirtClient()
 

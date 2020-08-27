@@ -417,6 +417,7 @@ func main() {
 	app := &virtHandlerApp{}
 	service.Setup(app)
 	log.InitializeLogging("virt-handler")
+	log.Log.Info("SQC: virt-handler")
 	app.Run()
 }
 

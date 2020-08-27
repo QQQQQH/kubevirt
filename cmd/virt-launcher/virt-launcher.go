@@ -317,6 +317,7 @@ func main() {
 	pflag.Parse()
 
 	log.InitializeLogging("virt-launcher")
+	log.Log.Info("SQC: virt-launcher")
 
 	if !*noFork {
 		exitCode, err := ForkAndMonitor("qemu-kvm", *ephemeralDiskDir, *containerDiskDir)

@@ -30,6 +30,7 @@ import (
 
 func main() {
 	klog.InitializeLogging("virt-api")
+	klog.Log.Info("SQC: virt-api")
 
 	app := virt_api.NewVirtApi()
 	service.Setup(app)

@@ -125,6 +125,7 @@ func Execute() {
 	service.Setup(&app)
 
 	log.InitializeLogging("virt-operator")
+	log.Log.Info("SQC: virt-operator")
 
 	err = util.VerifyEnv()
 	if err != nil {
